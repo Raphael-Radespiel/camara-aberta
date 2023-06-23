@@ -8,6 +8,7 @@ import ProposicoesSearch from "./pages/search/ProposiçõesSearch"
 import EventosSearch from "./pages/search/EventosSearch"
 
 function App() {
+
   let page;
 
   switch(window.location.pathname){
@@ -36,13 +37,8 @@ function App() {
 
   return (
     <>
-      <nav className="flex justify-between items-center 
-                       px-24
-                       bg-black text-white 
-                       text-lg font-bold font-roboto">
-        <a href="/" className="flex items-center gap-1
-                                border-2 border-white 
-                                my-4 p-1">
+      <nav className="flex justify-between items-center px-24 bg-black text-white text-lg font-bold font-roboto">
+        <a href="/" className="flex items-center gap-1 border-2 border-white my-4 p-1">
           <div className="">Câmara</div>
           <div className="bg-cyan text-black px-2 py-1">Aberta</div>
         </a>
@@ -57,6 +53,9 @@ function App() {
       <main>
         {page}
       </main>
+      <footer className="bg-black text-white text-center text-lg font-roboto py-4 mt-auto">
+        Copyright © 2023 Raphael Radespiel
+      </footer>
     </>
   )
 }
