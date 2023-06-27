@@ -16,7 +16,7 @@ export default function Home() {
           <option value="eventos">Eventos</option>
         </select>
         <input type="text" className="bg-gray-300 text-gray-800 border-gray-500 border-4 border-r-0 focus:outline-none px-2"></input>
-        <button className="bg-yellow px-4 py-2 border-black border-4 rounded-r-xl">Button</button>
+        <button className="bg-yellow px-4 py-2 border-black border-4 rounded-r-xl">Buscar</button>
       </section>
     </>
   )

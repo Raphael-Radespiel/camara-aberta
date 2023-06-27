@@ -2,6 +2,8 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
 
+import Navbar from "./components/Navbar"
+
 import DeputadosSearch from "./pages/search/DeputadosSearch"
 import PartidosSearch from "./pages/search/PartidosSearch"
 import ProposicoesSearch from "./pages/search/ProposiçõesSearch"
@@ -37,23 +39,11 @@ function App() {
 
   return (
     <>
-      <nav className="flex justify-between items-center px-24 bg-black text-white text-lg font-bold font-roboto">
-        <a href="/" className="flex items-center gap-1 border-2 border-white my-4 p-1">
-          <div className="">Câmara</div>
-          <div className="bg-cyan text-black px-2 py-1">Aberta</div>
-        </a>
-        <ul className="flex gap-12 items-center">
-          <li><a href="/search/deputados">Deputados</a></li>
-          <li><a href="/search/partidos">Partidos</a></li>
-          <li><a href="/search/proposicoes">Proposições</a></li>
-          <li><a href="/search/eventos">Eventos</a></li>
-        </ul>
-        <a href="/sobre" className="border-b-4 border-yellow">Sobre o Projeto</a>
-      </nav>
+      <Navbar/>
       <main>
         {page}
       </main>
-      <footer className="bg-black text-white text-center text-lg font-roboto py-4 mt-auto">
+      <footer className="bg-black text-white text-center text-sm lg:text-lg font-roboto py-4 mt-auto">
         Copyright © 2023 Raphael Radespiel
       </footer>
     </>
